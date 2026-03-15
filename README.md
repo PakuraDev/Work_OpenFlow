@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>OPENFLOW_v3 ⚡</h1>
+  <h1>OPENFLOW_v3</h1>
 </div>
 
 <div align="center">
@@ -16,7 +16,7 @@ Este software está diseñado para ejecutarse íntegramente en el cliente (naveg
 
 ---
 
-## 🔥 Features (v3.0 Portfolio Edition)
+## Features (v3.0 Portfolio Edition)
 
 Esta versión ha sido reescrita para alcanzar el grado industrial en rendimiento y UX:
 
@@ -31,7 +31,7 @@ Esta versión ha sido reescrita para alcanzar el grado industrial en rendimiento
 
 ---
 
-## 🛠 Arquitectura Técnica
+## Arquitectura Técnica
 
 Construido puramente con Vanilla JavaScript (ES6 Modules) sin frameworks reactivos, logrando un *bundle size* mínimo.
 
@@ -42,7 +42,7 @@ Construido puramente con Vanilla JavaScript (ES6 Modules) sin frameworks reactiv
 
 ---
 
-## 🚀 Instalación y Despliegue
+## Instalación y Despliegue
 
 Cualquier navegador moderno con soporte para ES6 Modules e IndexedDB (Chrome, Firefox, Edge, Safari).
 
