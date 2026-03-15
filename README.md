@@ -1,8 +1,18 @@
-# OPENFLOW v3.0 ⚡
+<div align="center">
+  <h1>OPENFLOW_v3 ⚡</h1>
+</div>
+
+<div align="center">
+  <img src="icon-1024-OpenFlow_V3.png" alt="Logo de OpenFlow_v3" width="256">
+
+  El sistema de gestión de proyectos Local-First de grado industrial.
+</div>
+
+---
 
 OpenFlow es una Single Page Application (SPA) de gestión de proyectos diseñada bajo la filosofía "Local-First". Elimina la latencia y la complejidad de herramientas corporativas como Jira, ofreciendo una interfaz brutalista, instantánea y centrada en la eficiencia del ingeniero y del Product Designer.
 
-Este software está diseñado para ejecutarse íntegramente en el cliente (navegador), garantizando la privacidad absoluta de los datos y la operatividad sin conexión a internet (Si nos ponemso exactos, está diseñado para que no se me olviden las cosas, pero lo otro queda mejor).
+Este software está diseñado para ejecutarse íntegramente en el cliente (navegador), garantizando la privacidad absoluta de los datos y la operatividad sin conexión a internet.
 
 ---
 
