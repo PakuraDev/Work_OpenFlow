@@ -1,0 +1,101 @@
+/* --- BOTONES --- */
+.btn {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid var(--ink);
+    font-size: 0.8rem;
+    transition: all 0.1s;
+}
+
+.btn:active { transform: translate(2px, 2px); }
+
+.btn-acid {
+    background-color: var(--acid);
+    color: var(--ink);
+    box-shadow: 4px 4px 0 var(--ink);
+}
+.btn-acid:hover, .btn-acid.active { background-color: #dfff4f; box-shadow: 2px 2px 0 var(--ink); transform: translate(2px, 2px); }
+
+.btn-solid {
+    background-color: var(--ink);
+    color: var(--acid);
+    box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+}
+.btn-solid:hover { color: #fff; }
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--ink);
+}
+.btn-outline:hover { background-color: var(--concrete); }
+
+.btn-text {
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+}
+.btn-text:hover { color: var(--alert); }
+
+/* --- HEADER --- */
+.cmd-bar {
+    height: 70px;
+    border-bottom: 2px solid var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background: #fff;
+}
+.brand h1 { font-size: 1.2rem; letter-spacing: -1px; }
+.status-dot { 
+    width: 10px; height: 10px; background: var(--acid); 
+    display: inline-block; border: 1px solid var(--ink); margin-right: 10px;
+}
+.toolbar { display: flex; gap: 1rem; align-items: center; }
+
+/* --- MODAL --- */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(2px);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 999;
+}
+.modal-window {
+    background: var(--paper);
+    border: 2px solid var(--ink);
+    width: 600px;
+    box-shadow: 8px 8px 0 var(--acid);
+    max-height: 90vh;
+    display: flex; flex-direction: column;
+}
+.modal-header {
+    background: var(--ink);
+    color: var(--acid);
+    padding: 1rem;
+    display: flex; justify-content: space-between;
+}
+#modal-body { padding: 2rem; overflow-y: auto; }
+
+/* --- INPUTS --- */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--ink);
+    background: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+input:focus, select:focus, textarea:focus {
+    background: var(--acid);
+    border-color: var(--ink);
+}
+label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
+
+/* Links Repeater Styles */
+.link-row { display: flex; gap: 5px; margin-bottom: 5px; }
+.link-row input { margin-bottom: 0; }

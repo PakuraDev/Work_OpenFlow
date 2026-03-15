@@ -1,0 +1,88 @@
+/* --- BOARD GRID --- */
+.board-grid {
+    display: grid;
+    /* 4 Columnas forzadas: Todo, Progress, Review, Done */
+    grid-template-columns: repeat(4, 1fr); 
+    height: calc(100vh - 70px);
+    background: var(--ink); /* Las líneas divisorias serán este fondo */
+    gap: 1px; /* Espacio para las líneas */
+    overflow-x: auto;
+}
+
+.column {
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 300px;
+}
+
+.column-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--ink);
+    background: #fff;
+    display: flex; justify-content: space-between;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.task-list {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-image: radial-gradient(var(--concrete) 1px, transparent 1px);
+    background-size: 20px 20px; /* Grilla de puntos técnica */
+}
+
+/* Feedback visual Drag & Drop */
+.task-list.drag-over {
+    background-color: #e6ffb3; /* Tinte verde suave al arrastrar encima */
+    box-shadow: inset 0 0 0 2px var(--acid);
+}
+
+/* --- CARD --- */
+.task-card {
+    background: #fff;
+    border: 1px solid var(--ink);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: grab;
+    transition: transform 0.1s, box-shadow 0.1s;
+    position: relative;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+.task-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 var(--ink);
+    z-index: 10;
+}
+
+.task-card.dragging {
+    opacity: 0.5;
+    border: 1px dashed var(--ink);
+    background: var(--acid);
+}
+
+.epic-pill {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border: 1px solid var(--ink);
+    background: var(--concrete);
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.card-title { font-weight: bold; margin-bottom: 0.5rem; line-height: 1.3; }
+
+.card-meta {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.7rem; color: #666; margin-top: 10px;
+    border-top: 1px dashed #ccc; padding-top: 5px;
+}
+
+/* --- GANTT OVERRIDES (Brutalizing Frappe) --- */
+#gantt-view { padding: 2rem; height: calc(100vh - 70px); overflow: auto; background: white; }
+.gantt .bar-progress { fill: var(--acid) !important; }
+.gantt .bar-label { fill: var(--ink) !important; font-family: var(--font-mono) !important; }

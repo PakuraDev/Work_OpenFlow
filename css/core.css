@@ -1,0 +1,36 @@
+:root {
+    /* PALETTE: INDUSTRIAL */
+    --acid: #ccff00;
+    --acid-dim: #b3e600;
+    --ink: #050505;
+    --paper: #f2f2f2;
+    --concrete: #e0e0e0;
+    --alert: #ff4d00;
+    --grid-line: #000000;
+
+    /* TYPOGRAPHY */
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* SPACING */
+    --u: 8px; /* Unidad base */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; outline: none; }
+
+body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-mono);
+    height: 100vh;
+    overflow: hidden; /* Desktop app feel */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scrollbar Brutalista */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--acid); border: 1px solid var(--ink); }
+::-webkit-scrollbar-thumb:hover { background: var(--alert); }
+
+.hidden { display: none !important; }
